@@ -1,0 +1,481 @@
+{
+	"info": {
+		"_postman_id": "214da082-52de-4e7d-8b80-ea60e9d5ff45",
+		"name": "Nasa",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "38006568"
+	},
+	"item": [
+		{
+			"name": "Картинка дня",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.nasa.gov/planetary/apod?date=1989-10-20&api_key=2SXDRZ46FGsZb6YxBHcFk5NxpIUeSNSOqRKKR7XY",
+					"protocol": "https",
+					"host": [
+						"api",
+						"nasa",
+						"gov"
+					],
+					"path": [
+						"planetary",
+						"apod"
+					],
+					"query": [
+						{
+							"key": "date",
+							"value": "1989-10-20"
+						},
+						{
+							"key": "api_key",
+							"value": "2SXDRZ46FGsZb6YxBHcFk5NxpIUeSNSOqRKKR7XY"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Астероиды",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.nasa.gov/neo/rest/v1/feed?start_date=1989-10-20&end_date=1989-10-27&api_key=2SXDRZ46FGsZb6YxBHcFk5NxpIUeSNSOqRKKR7XY",
+					"protocol": "https",
+					"host": [
+						"api",
+						"nasa",
+						"gov"
+					],
+					"path": [
+						"neo",
+						"rest",
+						"v1",
+						"feed"
+					],
+					"query": [
+						{
+							"key": "start_date",
+							"value": "1989-10-20"
+						},
+						{
+							"key": "end_date",
+							"value": "1989-10-27"
+						},
+						{
+							"key": "api_key",
+							"value": "2SXDRZ46FGsZb6YxBHcFk5NxpIUeSNSOqRKKR7XY"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Coronal Mass Ejection (CME)",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.nasa.gov/DONKI/CME?startDate=2024-08-30&endDate=2024-08-30&api_key=2SXDRZ46FGsZb6YxBHcFk5NxpIUeSNSOqRKKR7XY",
+					"protocol": "https",
+					"host": [
+						"api",
+						"nasa",
+						"gov"
+					],
+					"path": [
+						"DONKI",
+						"CME"
+					],
+					"query": [
+						{
+							"key": "startDate",
+							"value": "2024-08-30"
+						},
+						{
+							"key": "endDate",
+							"value": "2024-08-30"
+						},
+						{
+							"key": "api_key",
+							"value": "2SXDRZ46FGsZb6YxBHcFk5NxpIUeSNSOqRKKR7XY"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Coronal Mass Ejection (CME) Analysis",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.nasa.gov/DONKI/CMEAnalysis?startDate=2024-08-01&endDate=2024-08-30&mostAccurateOnly=true&completeEntryOnly=true&speed =500&halfAngle =500&catalog=ALL&keyword=NONE &api_key=2SXDRZ46FGsZb6YxBHcFk5NxpIUeSNSOqRKKR7XY",
+					"protocol": "https",
+					"host": [
+						"api",
+						"nasa",
+						"gov"
+					],
+					"path": [
+						"DONKI",
+						"CMEAnalysis"
+					],
+					"query": [
+						{
+							"key": "startDate",
+							"value": "2024-08-01"
+						},
+						{
+							"key": "endDate",
+							"value": "2024-08-30"
+						},
+						{
+							"key": "mostAccurateOnly",
+							"value": "true"
+						},
+						{
+							"key": "completeEntryOnly",
+							"value": "true"
+						},
+						{
+							"key": "speed ",
+							"value": "500"
+						},
+						{
+							"key": "halfAngle ",
+							"value": "500"
+						},
+						{
+							"key": "catalog",
+							"value": "ALL"
+						},
+						{
+							"key": "keyword",
+							"value": "NONE "
+						},
+						{
+							"key": "api_key",
+							"value": "2SXDRZ46FGsZb6YxBHcFk5NxpIUeSNSOqRKKR7XY"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Geomagnetic Storm (GST)",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.nasa.gov/DONKI/GST?startDate&endDate&api_key=2SXDRZ46FGsZb6YxBHcFk5NxpIUeSNSOqRKKR7XY",
+					"protocol": "https",
+					"host": [
+						"api",
+						"nasa",
+						"gov"
+					],
+					"path": [
+						"DONKI",
+						"GST"
+					],
+					"query": [
+						{
+							"key": "startDate",
+							"value": null
+						},
+						{
+							"key": "endDate",
+							"value": null
+						},
+						{
+							"key": "api_key",
+							"value": "2SXDRZ46FGsZb6YxBHcFk5NxpIUeSNSOqRKKR7XY"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Interplanetary Shock (IPS)",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.nasa.gov/DONKI/IPS?startDate&endDate&location&catalog&api_key=2SXDRZ46FGsZb6YxBHcFk5NxpIUeSNSOqRKKR7XY",
+					"protocol": "https",
+					"host": [
+						"api",
+						"nasa",
+						"gov"
+					],
+					"path": [
+						"DONKI",
+						"IPS"
+					],
+					"query": [
+						{
+							"key": "startDate",
+							"value": null
+						},
+						{
+							"key": "endDate",
+							"value": null
+						},
+						{
+							"key": "location",
+							"value": null
+						},
+						{
+							"key": "catalog",
+							"value": null
+						},
+						{
+							"key": "api_key",
+							"value": "2SXDRZ46FGsZb6YxBHcFk5NxpIUeSNSOqRKKR7XY"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Solar Flare (FLR)",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.nasa.gov/DONKI/FLR?startDate&endDate&api_key=2SXDRZ46FGsZb6YxBHcFk5NxpIUeSNSOqRKKR7XY",
+					"protocol": "https",
+					"host": [
+						"api",
+						"nasa",
+						"gov"
+					],
+					"path": [
+						"DONKI",
+						"FLR"
+					],
+					"query": [
+						{
+							"key": "startDate",
+							"value": null
+						},
+						{
+							"key": "endDate",
+							"value": null
+						},
+						{
+							"key": "api_key",
+							"value": "2SXDRZ46FGsZb6YxBHcFk5NxpIUeSNSOqRKKR7XY"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Query Parameters",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.nasa.gov/planetary/earth/imagery?lat=59&lon=39&dim=0.025&date=2024-08-30&cloud_score=False&api_key=2SXDRZ46FGsZb6YxBHcFk5NxpIUeSNSOqRKKR7XY",
+					"protocol": "https",
+					"host": [
+						"api",
+						"nasa",
+						"gov"
+					],
+					"path": [
+						"planetary",
+						"earth",
+						"imagery"
+					],
+					"query": [
+						{
+							"key": "lat",
+							"value": "59"
+						},
+						{
+							"key": "lon",
+							"value": "39"
+						},
+						{
+							"key": "dim",
+							"value": "0.025"
+						},
+						{
+							"key": "date",
+							"value": "2024-08-30"
+						},
+						{
+							"key": "cloud_score",
+							"value": "False"
+						},
+						{
+							"key": "api_key",
+							"value": "2SXDRZ46FGsZb6YxBHcFk5NxpIUeSNSOqRKKR7XY"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "EONET",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://eonet.gsfc.nasa.gov/api/v2.1/events?source=SIVolcano&status=open&limit=5&days=20&api_key=2SXDRZ46FGsZb6YxBHcFk5NxpIUeSNSOqRKKR7XY",
+					"protocol": "https",
+					"host": [
+						"eonet",
+						"gsfc",
+						"nasa",
+						"gov"
+					],
+					"path": [
+						"api",
+						"v2.1",
+						"events"
+					],
+					"query": [
+						{
+							"key": "source",
+							"value": "SIVolcano"
+						},
+						{
+							"key": "status",
+							"value": "open"
+						},
+						{
+							"key": "limit",
+							"value": "5"
+						},
+						{
+							"key": "days",
+							"value": "20"
+						},
+						{
+							"key": "api_key",
+							"value": "2SXDRZ46FGsZb6YxBHcFk5NxpIUeSNSOqRKKR7XY"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "EPIC",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.nasa.gov/EPIC/api/natural?api_key=2SXDRZ46FGsZb6YxBHcFk5NxpIUeSNSOqRKKR7XY",
+					"protocol": "https",
+					"host": [
+						"api",
+						"nasa",
+						"gov"
+					],
+					"path": [
+						"EPIC",
+						"api",
+						"natural"
+					],
+					"query": [
+						{
+							"key": "api_key",
+							"value": "2SXDRZ46FGsZb6YxBHcFk5NxpIUeSNSOqRKKR7XY"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Epic",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.nasa.gov/EPIC/api/natural?natural/date=2024-06-06&api_key=2SXDRZ46FGsZb6YxBHcFk5NxpIUeSNSOqRKKR7XY",
+					"protocol": "https",
+					"host": [
+						"api",
+						"nasa",
+						"gov"
+					],
+					"path": [
+						"EPIC",
+						"api",
+						"natural"
+					],
+					"query": [
+						{
+							"key": "natural/date",
+							"value": "2024-06-06"
+						},
+						{
+							"key": "api_key",
+							"value": "2SXDRZ46FGsZb6YxBHcFk5NxpIUeSNSOqRKKR7XY"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Mars Rover Photos",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?sol=70&camera=RHAZ&page=&api_key=2SXDRZ46FGsZb6YxBHcFk5NxpIUeSNSOqRKKR7XY",
+					"protocol": "https",
+					"host": [
+						"api",
+						"nasa",
+						"gov"
+					],
+					"path": [
+						"mars-photos",
+						"api",
+						"v1",
+						"rovers",
+						"curiosity",
+						"photos"
+					],
+					"query": [
+						{
+							"key": "sol",
+							"value": "70"
+						},
+						{
+							"key": "camera",
+							"value": "RHAZ"
+						},
+						{
+							"key": "page",
+							"value": ""
+						},
+						{
+							"key": "api_key",
+							"value": "2SXDRZ46FGsZb6YxBHcFk5NxpIUeSNSOqRKKR7XY"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
